@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<robot name="kr_50_r2500" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="$(find kr_50_r2500_description)/urdf/kr_50_r2500.xacro" />
+
+  <xacro:property name="prefix" value="''" />
+
+<link name="world"/>
+  <xacro:kr_50_r2500 prefix="${prefix}"/>
+  <joint name="${prefix}world_to_base_link" type="fixed">
+      <origin
+        xyz="0 0 0"
+        rpy="-1.57079632679 0 0" />
+      <parent link="world"/>
+      <child link="${prefix}base_link"/>
+  </joint>
+
+  <xacro:include filename="$(find parallel_2f_gripper)/urdf/gripper.xacro" />
+  <xacro:gripper prefix=""/>
+
+
+  <joint name="${prefix}gripper_joint" type="fixed">
+    <origin xyz="0 0 0.00" rpy="0 0 0"/>
+    <parent link="${prefix}flange" />
+    <child link="${prefix}gripper_base" />
+  </joint>
+
+  <joint name="fixed" type="fixed">
+      <origin
+        xyz="0 1.5 0"
+        rpy="0 0 0" />
+      <parent link="world"/>
+      <child link="table"/>
+  </joint>
+
+  <xacro:include filename="$(find kuka_coke_description)/urdf/table.xacro" />
+  <xacro:table/>
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/gripper</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+    </plugin>
+  </gazebo>
+</robot>
