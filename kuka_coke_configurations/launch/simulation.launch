@@ -39,8 +39,8 @@
 </include>
 
 <!-- load rviz -->
-<include file="$(find kuka_coke_configurations)/launch/rviz.launch" if="$(arg use_rviz)">
-  <arg name="rviz_config" value="$(find kr_50_r2500_configurations)/launch/control.rviz"/>
+<include file="$(find kr_50_r2500_configurations)/launch/rviz.launch" if="$(arg use_rviz)">
+  <arg name="rviz_config" value="$(find kuka_coke_configurations)/launch/control.rviz"/>
   <arg name="debug" value="$(arg debug)"/>
 </include>
 
