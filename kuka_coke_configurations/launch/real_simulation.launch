@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="pipeline" default="ompl"/>
+  <include file="$(find kuka_coke_configurations)/launch/simulation.launch">
+    <arg name="fake" value="false"/>
+    <arg name="pipeline" value="$(arg pipeline)"/>
+  </include>
+
+  <node pkg="parallel_2f_gripper"  type="gripper_server.py" name="parallel_gripper_server" output="screen" />
+
+</launch>

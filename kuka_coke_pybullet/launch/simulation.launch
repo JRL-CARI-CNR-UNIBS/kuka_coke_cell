@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<launch>
+  <include file="$(find kuka_coke_pybullet)/launch/load_config.launch" />
+  <include file="$(find pybullet_utils)/launch/run_pybullet.launch" />
+</launch>

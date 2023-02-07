@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="pipeline" default="ompl"/>
+    <include file="$(find kuka_coke_configurations)/launch/simulation.launch">
+      <arg name="fake" value="true"/>
+      <arg name="pipeline" value="$(arg pipeline)"/>
+    </include>
+
+</launch>

@@ -1,11 +1,11 @@
 moveit_setup_assistant_config:
   URDF:
     package: kuka_coke_description
-    relative_path: urdf/kuka_table.xacro
+    relative_path: urdf/kuka_table_rviz.xacro
     xacro_args: ""
   SRDF:
     relative_path: config/kr_50_r2500.srdf
   CONFIG:
     author_name: Michele Delledone
     author_email: m.delledonne002@unibs.it
-    generated_timestamp: 1669899989
+    generated_timestamp: 1674651462
