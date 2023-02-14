@@ -4,7 +4,7 @@
 <!-- |    EDITING THIS FILE BY HAND IS NOT RECOMMENDED                                 | -->
 <!-- =================================================================================== -->
 <robot name="table">
-  <link name="table">
+  <link concave="yes" name="table">
     <inertial>
       <origin rpy="0 0 0" xyz="-0.080585 0.00067592 0.086754"/>
       <mass value="30.385"/>
@@ -13,7 +13,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kuka_coke_description/meshes/table_base.STL"/>
+        <mesh filename="package://kuka_coke_description/meshes/table.stl"/>
       </geometry>
       <material name="">
         <color rgba="0.79216 0.81961 0.93333 1"/>
@@ -22,117 +22,9 @@
     <collision concave="yes">
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kuka_coke_description/meshes/table_base.STL"/>
+        <mesh filename="package://kuka_coke_description/meshes/table.stl"/>
       </geometry>
     </collision>
   </link>
-  <link name="hole_1">
-    <inertial>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <mass value="1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
-    </inertial>
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://kuka_coke_description/meshes/table_hole.STL"/>
-      </geometry>
-      <material name="">
-        <color rgba="0.79216 0.81961 0.93333 1"/>
-      </material>
-    </visual>
-    <collision concave="yes">
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://kuka_coke_description/meshes/table_hole.STL"/>
-      </geometry>
-    </collision>
-  </link>
-  <link name="hole_2">
-    <inertial>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <mass value="1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
-    </inertial>
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://kuka_coke_description/meshes/table_hole.STL"/>
-      </geometry>
-      <material name="">
-        <color rgba="0.79216 0.81961 0.93333 1"/>
-      </material>
-    </visual>
-    <collision concave="yes">
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://kuka_coke_description/meshes/table_hole.STL"/>
-      </geometry>
-    </collision>
-  </link>
-  <link name="hole_3">
-    <inertial>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <mass value="1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
-    </inertial>
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://kuka_coke_description/meshes/table_hole.STL"/>
-      </geometry>
-      <material name="">
-        <color rgba="0.79216 0.81961 0.93333 1"/>
-      </material>
-    </visual>
-    <collision concave="yes">
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://kuka_coke_description/meshes/table_hole.STL"/>
-      </geometry>
-    </collision>
-  </link>
-  <link name="hole_4">
-    <inertial>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <mass value="1"/>
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
-    </inertial>
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://kuka_coke_description/meshes/table_hole.STL"/>
-      </geometry>
-      <material name="">
-        <color rgba="0.79216 0.81961 0.93333 1"/>
-      </material>
-    </visual>
-    <collision concave="yes">
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://kuka_coke_description/meshes/table_hole.STL"/>
-      </geometry>
-    </collision>
-  </link>
-  <joint name="joint_1" type="fixed">
-    <origin rpy="0 0 0" xyz="-0.48 -0.4 1.0"/>
-    <parent link="table"/>
-    <child link="hole_1"/>
-  </joint>
-  <joint name="joint_2" type="fixed">
-    <origin rpy="0 0 0" xyz="-0.16 -0.4 1.0"/>
-    <parent link="table"/>
-    <child link="hole_2"/>
-  </joint>
-  <joint name="joint_3" type="fixed">
-    <origin rpy="0 0 0" xyz="0.16 -0.4 1.0"/>
-    <parent link="table"/>
-    <child link="hole_3"/>
-  </joint>
-  <joint name="joint_4" type="fixed">
-    <origin rpy="0 0 0" xyz="0.48 -0.4 1.0"/>
-    <parent link="table"/>
-    <child link="hole_4"/>
-  </joint>
 </robot>
 
