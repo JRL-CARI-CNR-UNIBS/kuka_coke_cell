@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com)
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="table" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:macro name="table">
+
+  <link name="table">
+    <inertial>
+      <origin
+        xyz="-0.080585 0.00067592 0.086754"
+        rpy="0 0 0" />
+      <mass
+        value="30.385" />
+      <inertia
+        ixx="0.38941"
+        ixy="0.0047083"
+        ixz="0.060696"
+        iyy="0.87424"
+        iyz="-0.00029206"
+        izz="1.0819" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kuka_coke_description/meshes/table_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision concave="yes">
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kuka_coke_description/meshes/table_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="hole_1">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="1" />
+      <inertia
+        ixx="0.001"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.001"
+        iyz="0.0"
+        izz="0.001" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kuka_coke_description/meshes/table_hole.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision concave="yes">
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kuka_coke_description/meshes/table_hole.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="hole_2">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="1" />
+      <inertia
+        ixx="0.001"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.001"
+        iyz="0.0"
+        izz="0.001" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kuka_coke_description/meshes/table_hole.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision concave="yes">
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kuka_coke_description/meshes/table_hole.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="hole_3">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="1" />
+      <inertia
+        ixx="0.001"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.001"
+        iyz="0.0"
+        izz="0.001" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kuka_coke_description/meshes/table_hole.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision concave="yes">
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kuka_coke_description/meshes/table_hole.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="hole_4">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="1" />
+      <inertia
+        ixx="0.001"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.001"
+        iyz="0.0"
+        izz="0.001" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kuka_coke_description/meshes/table_hole.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision concave="yes">
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kuka_coke_description/meshes/table_hole.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="joint_1" type="fixed">
+    <origin xyz="-0.48 -0.4 1.0" rpy="0 0 0"/>
+    <parent link="table" />
+    <child link="hole_1" />
+  </joint>
+  <joint name="joint_2" type="fixed">
+    <origin xyz="-0.16 -0.4 1.0" rpy="0 0 0"/>
+    <parent link="table" />
+    <child link="hole_2" />
+  </joint>
+  <joint name="joint_3" type="fixed">
+    <origin xyz="0.16 -0.4 1.0" rpy="0 0 0"/>
+    <parent link="table" />
+    <child link="hole_3" />
+  </joint>
+  <joint name="joint_4" type="fixed">
+    <origin xyz="0.48 -0.4 1.0" rpy="0 0 0"/>
+    <parent link="table" />
+    <child link="hole_4" />
+  </joint>
+
+</xacro:macro>
+</robot>
