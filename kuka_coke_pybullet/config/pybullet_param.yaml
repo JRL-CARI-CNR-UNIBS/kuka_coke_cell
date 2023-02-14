@@ -1,5 +1,5 @@
-simulation_step_time: 0.005
-real_step_time : 0.005
+simulation_step_time: 0.001
+real_step_time : 0.001
 camera_init:
   distance: 2.00
   yaw: 128.80

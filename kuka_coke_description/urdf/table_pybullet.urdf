@@ -4,7 +4,7 @@
 <!-- |    EDITING THIS FILE BY HAND IS NOT RECOMMENDED                                 | -->
 <!-- =================================================================================== -->
 <robot name="table">
-  <link name="table">
+  <link concave="yes" name="table">
     <inertial>
       <origin rpy="0 0 0" xyz="-0.080585 0.00067592 0.086754"/>
       <mass value="30.385"/>
@@ -19,7 +19,7 @@
         <color rgba="0.79216 0.81961 0.93333 1"/>
       </material>
     </visual>
-    <collision>
+    <collision concave="yes">
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://kuka_coke_description/meshes/table.stl"/>
