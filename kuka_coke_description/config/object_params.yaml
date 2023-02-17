@@ -1,0 +1,11 @@
+coke_can:
+  package_name: 'kuka_coke_description'
+  urdf_file_path: 'urdf/coke_can.urdf'
+  mesh_file_path: 'meshes/coke_can.STL'
+  mesh_position_offset: [0, 0, -0.0575]
+  mesh_orientation_offset: [0, 0, 0, 1]
+
+sphere:
+  package_name: 'pybullet_utils'
+  foulder_name: 'urdf'
+  urdf_file_name: 'sphere'

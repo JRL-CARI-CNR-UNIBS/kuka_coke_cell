@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 
 <launch>
+  <arg name="use_rviz" default="false" />
   <include file="$(find kuka_coke_pybullet)/launch/load_config.launch" />
-  <include file="$(find pybullet_utils)/launch/run_pybullet.launch" />
+  <include file="$(find pybullet_utils)/launch/run_pybullet.launch">
+    <arg name="use_rviz" value="$(arg use_rviz)"/>
+  </include>
 </launch>
