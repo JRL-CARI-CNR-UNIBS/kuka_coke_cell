@@ -3,7 +3,8 @@
 <arg name="fake" default="false"/>
 <arg name="use_rviz" default="true" />
 <arg name="debug" default="false" />
-<arg name="pipeline" default="ompl" />
+<!-- <arg name="pipeline" default="ompl" /> -->
+<arg name="pipeline" default="dirrt" />
 
 <arg unless="$(arg debug)" name="launch_prefix" value="" />
 <arg     if="$(arg debug)" name="launch_prefix"
