@@ -26,9 +26,9 @@ level1_hw:
 
   wrench_resource:
     sensor_name: wrench
-    frame_id: gripper_base_link
+    frame_id: link6_to_flange
     subscribed_topics:
-    - /gripper/wrench
+    - /kr_50_r2500/link6_to_flange/wrench
 
   sampling_period: 0.002
   diagnostic_period: 0.1
