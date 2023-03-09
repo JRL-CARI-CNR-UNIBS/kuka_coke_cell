@@ -44,7 +44,8 @@ external_constraint:
     child_link: 'gripper_base'
     type: 'fixed'             # joint type: prismatic, fixed, point2point, gear
     axis: [0,0,0]                   # joint axis, in child link frame
-    parent_frame_position: [0, 0, 0.018] # position of the joint frame relative to parent center of mass frame.
+    # parent_frame_position: [0, 0, 0.018] # position of the joint frame relative to parent center of mass frame.
+    parent_frame_position: [0, 0, 0.020] # position of the joint frame relative to parent center of mass frame.
     parent_frame_orientation: [0,0,0,1] # the orientation of the joint frame relative to parent center of mass coordinate frame
     child_frame_position: [0,0,0]   # position of the joint frame relative to a given child center of mass frame (or world origin if no child specified)
     child_frame_orientation: [0,0,0,1]  # the orientation of the joint frame relative to the child center of mass coordinate frame (or world origin frame if no child specified)
