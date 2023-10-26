@@ -3,7 +3,6 @@
 <arg name="fake" default="false"/>
 <arg name="use_rviz" default="true" />
 <arg name="debug" default="false" />
-<!-- <arg name="pipeline" default="ompl" /> -->
 <arg name="pipeline" default="dirrt" />
 
 <arg unless="$(arg debug)" name="launch_prefix" value="" />
@@ -23,7 +22,7 @@
 </node>
 
   <!-- in high_dof_6_moveit_config package the joint_states is remapped to joint_states_desired -->
-<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen" />
 
 <!-- load moveit -->
 <include file="$(find kuka_coke_moveit_config)/launch/move_group.launch">
